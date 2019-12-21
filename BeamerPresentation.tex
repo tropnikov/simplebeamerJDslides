@@ -1,0 +1,295 @@
+% !TeX spellcheck = russian-aot
+
+% aspectratio could be 169 or 43 or any other
+\documentclass[russian,12pt,aspectratio=169,xcolor=table]{beamer}
+
+% slightly changed packages, packages settings and color settings from
+% Johannes Dorfner (https://github.com/ojdo/thesis-defense)
+\input{tex/setup}
+\input{tex/setup-colors}
+\input{tex/setup-settings}
+
+% You can edit layout of title page, 'Thank you' page and footnote in 'beamerthemeJD.sty' file
+\usetheme{JD}
+\beamertemplatenavigationsymbolsempty
+
+\setbeamertemplate{itemize items}{$\bullet$}
+\setbeamertemplate{itemize subitem}{$\circ$}
+
+% forming 'Thank you' page. 
+\thankstitle{}
+\thanksmessage{Thank you for attention!}
+
+% header fields: usage
+% \field
+%     [short form (footline)]
+%     {long form on title page}
+%\subtitle{Subtitle} % short version unused by this template%
+
+\title
+    [Short presentation title]
+    {Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec. }
+    
+%\subtitle{} % short version unused by this template
+
+\author
+    [N.~M.~Author]
+    {\underline{\smash{N.~M.~Author}}\inst{1}, A.~A.~Author1\inst{1}, A.~A.~Author2\inst{1,2,3}, A.~A.~Author3\inst{1,2}}
+    
+\institute
+	[Name of the Insitute]
+    {\begin{minipage}[b]{0.65\paperwidth}
+		\inst{1}
+		Institute 1\\
+		\inst{2}
+		Institute 2\\
+		\inst{3}
+		Institute 3
+    \end{minipage}
+\hfill
+% Institute logo
+\begin{minipage}[b]{0.15\paperwidth}
+	\centering
+	\includegraphics[width=\textwidth]{img/logo}
+\end{minipage}}
+% or
+%	{Institute of Laser Physics}
+%   [\hypersetup{urlcolor=jdgrey}%
+%    \href{http://website.com}{ILP}]
+
+% you can add your supervisor or chair here also
+%	{Chair of Renewable and Sustainable Energy Systems\\
+%   Supervisor:\\
+% Name and regalia}  
+
+\date
+    [01/12/2019]
+    {01/12/2019}
+%   {December 16th, 2019} or {Venue/conference}
+   
+% Conference logo        
+\titlegraphic{\includegraphics[width=0.95\paperwidth]{img/cover}}
+
+\begin{document}
+
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+\section{Introduction}
+\begin{frame}{Introduction}
+	\begin{itemize}\itemsep6pt
+		\item First item
+		\item Second item
+		\begin{itemize}\itemsep6pt
+			\item First subitem \\
+			\vspace{4pt}
+\qquad\qquad\begin{minipage}{.15\textwidth}
+				Kind\\
+				of\\
+				column
+			\end{minipage}
+			\begin{minipage}{0.4\textwidth}
+				Second column\\
+				Some text\\
+				Some other text
+			\end{minipage}\hfill \\
+			\item Second subitem\\
+			\vspace{4pt}
+\qquad\qquad\begin{minipage}{.15\textwidth}
+				Kind\\
+				of\\
+				column
+			\end{minipage}
+			\begin{minipage}{0.4\textwidth}
+				Second column\\
+				Some text\\
+				Some other text
+			\end{minipage}\hfill
+		\end{itemize}
+		\item Third item\\
+		\vspace{4pt}
+\quad\indent \begin{minipage}{.15\textwidth}
+			1st\\
+			column
+			\end{minipage}
+		\begin{minipage}{0.7\textwidth}
+		Second column\\
+		and some text
+		\end{minipage}\hfill \\
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Title of the slide}
+	\begin{itemize}\itemsep6pt
+		\item Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		\begin{itemize}\itemsep6pt
+				\item Cras sagittis tempor mi non malesuada.
+				\item Fusce arcu nunc, venenatis quis pulvinar id, vehicula sed elit.
+				\item Duis vulputate at turpis id feugiat. Aliquam at dui ut nisl vulputate cursus. 
+				\item Vivamus ac gravida risus, vitae molestie urna.
+		\end{itemize}
+		\item Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		\begin{itemize}\itemsep6pt
+			\item Sed sodales leo nibh, nec commodo mauris molestie finibus.
+			\item Aliquam eu nunc euismod, consequat nunc et, euismod erat. 
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Title of the slide}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.5]{img/2}
+	\end{figure}
+\end{frame}
+
+\section{Section 1}
+
+\begin{frame}{Title of the slide}
+\qquad	\begin{minipage}{.42\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.6]{img/3}
+	\end{figure}
+	\end{minipage} \hfill
+\begin{minipage}{.45\textwidth}
+\begin{itemize}
+	\item Some text
+	\item	Some text
+	\item	Some text
+	\end{itemize}
+\end{minipage}
+\end{frame}
+
+\section{Section 2}
+\begin{frame}{Title of the slide}
+	\begin{minipage}{.42\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{img/4}\\
+			\vspace{.8ex}
+			Some text\\
+			\vspace{.5ex}
+			Some text\\
+			\vspace{.5ex}
+			Some text
+		\end{figure}
+	\end{minipage} \hfill
+	\begin{minipage}{.57\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{img/5}
+		\end{figure}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Title of the slide}
+	\begin{minipage}{.58\textwidth}
+		\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{img/5}
+		\end{figure}
+	\end{minipage}
+\hfill
+\begin{minipage}{.41\textwidth}
+\begin{figure}
+	\centering
+	\includegraphics[height=0.45\textheight]{img/5}\\
+	\vspace{-2em}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[height=0.45\textheight]{img/5}
+\end{figure}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{Title of the slide}
+	\begin{itemize}
+		\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula bibendum purus vel gravida. Nulla id nulla odio. Donec eu.
+		\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula bibendum purus vel gravida. Nulla id nulla odio. Donec eu.
+		\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id elit felis. Suspendisse pharetra condimentum felis, ut placerat purus lobortis ac. Aliquam scelerisque est eu.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Title of the slide}
+\begin{minipage}{.49\textwidth}
+		\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{img/6}
+		\end{figure}
+\end{minipage}\hfill 	
+\begin{minipage}{.49\textwidth}
+		\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{img/6}
+	\end{figure}
+\end{minipage}
+\end{frame}
+
+
+\section{Section 3}
+\begin{frame}{Title of the slide}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.56]{img/7}
+	\end{figure}
+\begin{itemize}
+	\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	\item Aenean elementum libero eu congue posuere.
+	\item Aliquam in mollis libero. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Title of the slide}
+	\begin{minipage}{.32\textwidth}
+		\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{img/5}
+		\end{figure}
+	\end{minipage}
+	\begin{minipage}{.32\textwidth}
+		\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{img/5}
+		\end{figure}
+	\end{minipage}
+	\begin{minipage}{.32\textwidth}
+		\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{img/5}
+		\end{figure}
+	\end{minipage}
+\end{frame}
+
+\section{Conclusion and future plans}
+	
+\begin{frame}{Conclusion}
+	\begin{itemize}
+		\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper tellus nisi, id placerat lectus bibendum vestibulum. Ut diam nulla, mattis non turpis eu, auctor elementum sapien.
+		\item Donec tellus tortor, eleifend quis tellus eget, finibus posuere mauris. Vivamus molestie dictum ante id scelerisque. Suspendisse ac ullamcorper dui.
+		\item Curabitur tincidunt justo in quam faucibus, et varius tellus blandit. Pellentesque nunc nunc, sagittis sit amet augue posuere, tristique auctor metus. Donec scelerisque felis at nisi auctor, sit amet egestas nunc consequat. Morbi posuere bibendum magna eu congue.
+	\end{itemize}
+\end{frame}
+
+\makethanks
+
+\begin{frame}[plain, noframenumbering]
+\end{frame}
+
+% Hidden appendix for additional slides
+\appendix
+
+\begin{frame}{Title of the slide}
+		\begin{itemize}	
+			\item Cras sagittis tempor mi non malesuada. Fusce arcu nunc, venenatis quis pulvinar id, vehicula sed elit. Duis vulputate at turpis id feugiat. Aliquam at dui ut nisl vulputate cursus. Vivamus ac gravida risus, vitae molestie urna. Nunc sed mattis sapien. Vestibulum ac lobortis eros. In lobortis diam et sagittis placerat. In hac habitasse platea dictumst. 
+			\item Nullam et fringilla metus, quis tempus mauris. Sed ut sem vel lorem pharetra lobortis. Nullam porta aliquam varius. Curabitur neque nulla, feugiat non risus et, hendrerit faucibus metus. 
+		\end{itemize}
+\end{frame}
+
+\end{document}
